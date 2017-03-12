@@ -3,7 +3,7 @@
 #we'll obviously need this file
 !.gitignore
 #add things as needed
-!.config
+!.config/**/*
 !.Xresources
 !.emacs
 !.weechat/* #password are encrypted in secure storage
