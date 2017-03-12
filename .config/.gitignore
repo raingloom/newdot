@@ -1,0 +1,9 @@
+#ignore all
+*
+#add this
+.gitignore
+#add as needed
+!i3*/**/*
+!redshift.conf
+!sway/**/*
+!nvim/**/*
