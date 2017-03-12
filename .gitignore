@@ -3,8 +3,12 @@
 #we'll obviously need this file
 !.gitignore
 #add things as needed
+!.config
+!.config/*
 !.config/**/*
 !.Xresources
 !.emacs
+!.weechat
 !.weechat/* #password are encrypted in secure storage
+!.weechat/**/*
 !.zshrc

@@ -3,7 +3,16 @@
 #add this
 .gitignore
 #add as needed
+#add all i3 related configs
+!i3*
+!i3*/*
 !i3*/**/*
 !redshift.conf
-!sway/**/*
+#all sway stuff
+!sway*
+!sway*/*
+!sway*/**/*
+#neovim here you go
+!nvim
+!nvim/*
 !nvim/**/*
