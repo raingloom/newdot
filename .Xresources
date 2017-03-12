@@ -1,0 +1,8 @@
+URxvt.depth: 32
+urxvt*foreground: white
+urxvt*background: rgba:0000/0000/0000/5000
+urxvt*scrollBar: false
+URxvt.inputMethod: ibus
+URxvt.preeditType: OverTheSpot
+URxvt*scrollTtyOutput: false
+URxvt*scrollTtyKeypress: true
