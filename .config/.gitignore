@@ -1,7 +1,7 @@
 #ignore all
 *
 #add this
-.gitignore
+!.gitignore
 #add as needed
 #add all i3 related configs
 !i3*

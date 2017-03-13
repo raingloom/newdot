@@ -12,3 +12,8 @@
 !.weechat/* #password are encrypted in secure storage
 !.weechat/**/*
 !.zshrc
+!.xinitrc
+
+#ignore backup and swap files
+*~
+**/*~
