@@ -1,4 +1,0 @@
-volume master {
-       format = "M:%volume"
-       format_muted = "M:-"
-}
