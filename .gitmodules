@@ -1,0 +1,3 @@
+[submodule ".config/blender/2.78/scripts/addons/animation_nodes"]
+	path = .config/blender/2.78/scripts/addons/animation_nodes
+	url = https://github.com/JacquesLucke/animation_nodes.git

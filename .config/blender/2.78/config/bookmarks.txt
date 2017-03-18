@@ -1,0 +1,4 @@
+[Bookmarks]
+[Recent]
+/home/rain/.config/blender/
+/usr/bin/

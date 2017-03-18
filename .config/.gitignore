@@ -16,3 +16,9 @@
 !nvim
 !nvim/*
 !nvim/**/*
+#blender configs
+!blender
+!blender/*
+!blender/**/*
+#but not the caches
+**/*.pyc
