@@ -1,4 +1,7 @@
 [Bookmarks]
 [Recent]
+/home/rain/renders/break the binary/
+/home/rain/wip pics/
+/home/rain/
 /home/rain/.config/blender/
 /usr/bin/
