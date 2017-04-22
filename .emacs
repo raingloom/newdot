@@ -37,7 +37,7 @@
     ("2997ecd20f07b99259bddba648555335ffb7a7d908d8d3e6660ecbec415f6b95" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
  '(package-selected-packages
    (quote
-    (auctex latex-preview-pane markdown-mode pdb-mode solarized-theme zenburn-theme lua-mode markdown-mode+ cargo flycheck-rust company racer rust-mode))))
+    (flymake-rust auctex latex-preview-pane markdown-mode pdb-mode solarized-theme zenburn-theme lua-mode markdown-mode+ cargo flycheck-rust company racer rust-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -53,3 +53,9 @@
   (setq c-basic-offset 4)
   (c-set-offset 'substatement-open 0))
 (add-hook 'c++-mode-hook 'my-c++-mode-hook)
+
+(setq org-log-done t)
+(setq org-log-done-with-time t)
+
+(require 'flymake-rust)
+(add-hook 'rust-mode-hook 'flymake-rust-load)

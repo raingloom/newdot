@@ -189,8 +189,7 @@ mode "volume" {
 	bindsym Escape mode "default"
 }
 
-#screenshots
-bindsym Print       exec import -window root "$HOME/Pictures/screenshots/$(date +%s).jpeg"
+include $HOME/magick-screenshot
 
 #starts notifications server daemon
 exec dunst -geometry +0-0 -t notifications &
@@ -198,4 +197,3 @@ exec dunst -geometry +0-0 -t notifications &
 #lockscreen
 bindsym $mod+Shift+Scroll_Lock exec i3lock -f #blur
 bindsym $mod+Scroll_Lock exec amixer sset Master mute && i3lock -c 000000	# black and muted, screen off
-
