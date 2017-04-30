@@ -2,6 +2,12 @@
 *
 #add this
 !.gitignore
+
+#zbs addons submodule
+!zbsmodules
+!zbsmodules/*
+!zbsmodules/**/*
+
 #add as needed
 #add all i3 related configs
 !i3*
