@@ -1,0 +1,1 @@
+/home/rain/.config/zbsmodules/shebangtype.lua
