@@ -6,6 +6,9 @@
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 (package-initialize) ;; You might already have this line
 
+; For packages not yet on MELPA
+(add-to-list 'load-path "~/.emacs.d/local/i3-emacs")
+
 (add-hook 'rust-mode-hook #'racer-mode)
 (add-hook 'rust-mode-hook #'cargo-minor-mode)
 (add-hook 'racer-mode-hook #'eldoc-mode)

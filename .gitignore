@@ -8,6 +8,9 @@
 !.config/**/*
 !.Xresources
 !.emacs
+!.emacs.d
+!.emacs.d/*
+!.emacs.d/**/*
 !.weechat
 !.weechat/* #password are encrypted in secure storage
 !.weechat/**/*
