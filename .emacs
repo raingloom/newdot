@@ -1,3 +1,17 @@
+;; From https://emacs-doctor.com/emacs-strip-tease.html
+(setq initial-scratch-message "")
+(setq inhibit-startup-message t)
+(scroll-bar-mode 0)
+(tool-bar-mode 0)
+(menu-bar-mode 0)
+
+(add-to-list 'load-path "~/.emacs.d/local/i3-emacs")
+
+(require 'i3)
+(require 'i3-integration)
+(i3-one-window-per-frame-mode-on)
+(i3-advise-visible-frame-list-on)
+
 (require 'package) ;; You might already have this line
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/"))
@@ -6,13 +20,9 @@
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 (package-initialize) ;; You might already have this line
 
-; For packages not yet on MELPA
-(add-to-list 'load-path "~/.emacs.d/local/i3-emacs")
-
 (add-hook 'rust-mode-hook #'racer-mode)
 (add-hook 'rust-mode-hook #'cargo-minor-mode)
 (add-hook 'racer-mode-hook #'eldoc-mode)
-
 (add-hook 'racer-mode-hook #'company-mode)
 
 (require 'rust-mode)
