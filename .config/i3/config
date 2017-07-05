@@ -190,12 +190,16 @@ mode "volume" {
 }
 
 #screenshots
-bindsym Print       exec import -window root "$HOME/Pictures/screenshots/$(date +%s).jpeg"
+#make sure the folder exists
+exec mkdir -p "$HOME/Pictures/screenshots/"
+bindsym Print        exec import -window root "$HOME/Pictures/screenshots/$(date +%s).jpeg"
+#select rectangle
+bindsym Shift+Print  exec import              "$HOME/Pictures/screenshots/$(date +%s).jpeg"
 
 #starts notifications server daemon
 exec dunst -geometry +0-0 -t notifications &
 
 #lockscreen
 bindsym $mod+Shift+Scroll_Lock exec i3lock -f #blur
-bindsym $mod+Scroll_Lock exec amixer sset Master mute && i3lock -c 000000	# black and muted, screen off
+bindsym $mod+Scroll_Lock exec amixer sset Master mute && i3lock -c 000000
 

@@ -50,7 +50,7 @@
     ("a0dc0c1805398db495ecda1994c744ad1a91a9455f2a17b59b716f72d3585dde" "2997ecd20f07b99259bddba648555335ffb7a7d908d8d3e6660ecbec415f6b95" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
  '(package-selected-packages
    (quote
-    (cmake-mode skewer-reload-stylesheets skewer-mode drag-stuff paredit-everywhere scss-mode web-mode flymake-rust auctex latex-preview-pane markdown-mode solarized-theme zenburn-theme lua-mode markdown-mode+ cargo flycheck-rust company racer rust-mode))))
+    (latex-unicode-math-mode cmake-mode skewer-reload-stylesheets skewer-mode drag-stuff paredit-everywhere scss-mode web-mode flymake-rust auctex latex-preview-pane markdown-mode solarized-theme zenburn-theme lua-mode markdown-mode+ cargo flycheck-rust company racer rust-mode))))
 
 (load-file (let ((coding-system-for-read 'utf-8))
                 (shell-command-to-string "agda-mode locate")))
